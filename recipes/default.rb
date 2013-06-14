@@ -16,8 +16,10 @@ file "#{node[:ce_delta_hub][:destination]}/config.json" do
   owner node[:ce_delta_hub][:user]
   content <<-EOH
 {
-  "ce-front-end-publisher": "#{node[:ce_delta_hub][:ce_front_end_publisher]}",
-  "ce-front-end-xreply": "#{node[:ce_delta_hub][:ce_front_end_xreply]}"
+  "ce-front-end": {
+    "stream": #{node[:ce_delta_hub][:ce_front_end][:stream]},
+    "state": #{node[:ce_delta_hub][:ce_front_end][:state]}
+  }
 }
   EOH
 end

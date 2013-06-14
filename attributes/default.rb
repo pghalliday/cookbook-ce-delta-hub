@@ -1,8 +1,8 @@
 default[:ce_delta_hub][:repository] = "https://github.com/pghalliday/ce-delta-hub.git"
 default[:ce_delta_hub][:destination] = "/opt/ce-delta-hub"
 default[:ce_delta_hub][:user] = "ce-delta-hub"
-default[:ce_delta_hub][:ce_front_end_publisher] = "5000"
-default[:ce_delta_hub][:ce_front_end_xreply] = "5001"
+default[:ce_delta_hub][:ce_front_end][:stream] = "5000"
+default[:ce_delta_hub][:ce_front_end][:state] = "5001"
 
 # dependency defaults
 default[:nodejs][:install_method] = "package"
