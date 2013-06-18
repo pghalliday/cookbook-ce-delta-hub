@@ -18,6 +18,7 @@ Attributes are specified under the `ce_delta_hub` keyspace.
 - `node[:ce_delta_hub][:user]` - the user to install and start ce-delta-hub as (defaults to "ce-delta-hub")
 - `node[:ce_delta_hub][:ce_front_end][:stream]` - the port to bind the ce-delta-hub to publish market state deltas to ce-front-end instances (defaults to "5000")
 - `node[:ce_delta_hub][:ce_front_end][:state]` - the port to bind the ce-delta-hub to respond to state requests from ce-front-end instances (defaults to "5001")
+- `node[:ce_delta_hub][:ce_engine][:stream]` - the port to bind the ce-delta-hub to receive to deltas streamed from ce-engine instances (defaults to "5002")
 
 ## Recipes
 
