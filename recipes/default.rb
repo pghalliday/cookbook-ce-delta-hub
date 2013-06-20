@@ -21,7 +21,8 @@ file "#{node[:ce_delta_hub][:destination]}/config.json" do
     "state": #{node[:ce_delta_hub][:ce_front_end][:state]}
   },
   "ce-engine": {
-    "stream": #{node[:ce_delta_hub][:ce_engine][:stream]}
+    "stream": #{node[:ce_delta_hub][:ce_engine][:stream]},
+    "state": #{node[:ce_delta_hub][:ce_engine][:state]}
   }
 }
   EOH
