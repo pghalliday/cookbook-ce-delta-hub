@@ -30,5 +30,5 @@ Attributes are specified under the `ce_delta_hub` keyspace.
 - Runs npm start to start the `ce-delta-hub`
 
 ## License
-Copyright (c) 2013 Peter Halliday  
+Copyright &copy; 2013 Peter Halliday  
 Licensed under the MIT license.
