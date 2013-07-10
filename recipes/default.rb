@@ -16,6 +16,9 @@ file "#{node[:ce_delta_hub][:destination]}/config.json" do
   owner node[:ce_delta_hub][:user]
   content <<-EOH
 {
+  "commission": {
+    "account": #{node[:ce_delta_hub][:commission][:account]}
+  },
   "ce-front-end": {
     "stream": #{node[:ce_delta_hub][:ce_front_end][:stream]},
     "state": #{node[:ce_delta_hub][:ce_front_end][:state]}
